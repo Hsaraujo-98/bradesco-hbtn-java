@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class FileReadingExercise {
     public static void main(String[] args) {
-        String fileName = "arquivos/1/exemplo.txt"; // Nome do arquivo fixo para leitura
+        String fileName = "exemplo.txt"; // Nome do arquivo fixo para leitura
 
         System.out.println("Conteúdo do arquivo '" + fileName + "':\n");
 
