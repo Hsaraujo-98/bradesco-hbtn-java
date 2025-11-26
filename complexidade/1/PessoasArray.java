@@ -1,5 +1,4 @@
 public class PessoasArray {
-
     private String[] nomes;
 
     public PessoasArray() {
@@ -24,10 +23,10 @@ public class PessoasArray {
 
         for (int i = 0; i < nomes.length; i++) {
             System.out.println("Passando pelo indice:" + i);
-            if (nomes[i].equals(nome)) {
+            if (nomes[i].equalsIgnoreCase(nome)) {
                 System.out.println("Nome pesquisado é " + nomes[i] + " que está na posição " + i);
                 encontrado = true;
-                break;
+                // não usamos break, para continuar percorrendo até o fim
             }
         }
 
