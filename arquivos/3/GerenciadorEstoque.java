@@ -1,11 +1,9 @@
 import java.util.Scanner;
 
-
 public class GerenciadorEstoque {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Estoque estoque = new Estoque("estoque.csv");
-
 
         while (true) {
             System.out.println("Menu:");
@@ -16,8 +14,7 @@ public class GerenciadorEstoque {
             System.out.println("5. Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar o buffer
-
+            scanner.nextLine(); // Limpa o buffer
 
             switch (opcao) {
                 case 1:
@@ -35,7 +32,6 @@ public class GerenciadorEstoque {
                     estoque.excluirProduto(idExcluir);
                     break;
                 case 3:
-                    System.out.println("Estoques:");
                     estoque.exibirEstoque();
                     break;
                 case 4:
@@ -46,7 +42,6 @@ public class GerenciadorEstoque {
                     estoque.atualizarQuantidade(idAtualizar, novaQuantidade);
                     break;
                 case 5:
-                    System.out.println("Saindo...");
                     scanner.close();
                     return;
                 default:
