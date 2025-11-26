@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class CsvFileReader {
     public static void main(String[] args) {
-        String fileName = "arquivos/2/funcionarios.csv";
+        String fileName = "funcionarios.csv";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String linha;
