@@ -2,3 +2,4 @@ Heranca/
 .idea
 out/
 bradesco-hbtn-java.iml
+*.class
