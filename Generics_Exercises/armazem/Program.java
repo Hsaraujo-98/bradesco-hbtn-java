@@ -1,5 +1,3 @@
-package Generics_Exercises.armazem;
-
 import java.util.Locale;
 
 public class Program {
