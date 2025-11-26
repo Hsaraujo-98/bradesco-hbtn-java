@@ -16,7 +16,6 @@ public class PessoasArray {
         this.nomes = nomes;
     }
 
-    // Busca linear O(n)
     public void buscaLinear(String nome) {
         boolean encontrado = false;
         System.out.println("Procurando pelo nome: \"" + nome + "\"");
@@ -26,7 +25,6 @@ public class PessoasArray {
             if (nomes[i].equals(nome)) { // ✅ agora usando equals()
                 System.out.println("Nome pesquisado é " + nomes[i] + " que está na posição " + i);
                 encontrado = true;
-                // não usamos break, para continuar percorrendo até o fim
             }
         }
 
