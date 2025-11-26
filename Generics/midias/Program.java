@@ -1,5 +1,3 @@
-package midias;
-
 public class Program {
     public static void main(String[] args) {
         Livro livro1 = new Livro("Xato", 1);

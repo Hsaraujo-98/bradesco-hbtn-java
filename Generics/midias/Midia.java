@@ -1,5 +1,3 @@
-package midias;
-
 public class Midia {
     private String nome;
 
