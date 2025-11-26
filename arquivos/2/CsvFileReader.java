@@ -4,9 +4,10 @@ import java.io.IOException;
 
 public class CsvFileReader {
     public static void main(String[] args) {
+        String filePath = "arquivos/2/";
         String fileName = "funcionarios.csv";
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath + fileName))) {
             String linha;
 
             while ((linha = reader.readLine()) != null) {
