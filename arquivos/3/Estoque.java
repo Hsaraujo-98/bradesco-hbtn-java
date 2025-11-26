@@ -15,8 +15,7 @@ public class Estoque {
     // Carrega os produtos do arquivo CSV
     private void carregarProdutos() {
         produtos.clear();
-        String filePath = "arquivos/3/";
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath + fileName))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String linha;
             while ((linha = reader.readLine()) != null) {
                 if (linha.trim().isEmpty()) continue;
